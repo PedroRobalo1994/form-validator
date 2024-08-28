@@ -14,19 +14,19 @@
         <form id="form">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your full name" required minlength="3" maxlength="100">
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3" maxlength="100">
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="555-555-5555" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="email@address.com" required>
+                <input type="email" id="email" name="email" placeholder="email@address.com" required>
             </div>
             <div class="form-group">
                 <label for="website">Website URL</label>
-                <input type="url" id="website" placeholder="https://yourwebsite.com">
+                <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
             </div>
             <div class="form-group">
                 <label for="password1">Password</label>
@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="password2">Confirm Password</label>
-                <input type="password" id="password2" placeholder="Confirm your password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}" title="Password must be at least 8 characters long, contain at least one digit, one lowercase letter, one uppercase letter, and one special character (@#$%^&+=)">
+                <input type="password" id="password2" name="password" placeholder="Confirm your password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}" title="Password must be at least 8 characters long, contain at least one digit, one lowercase letter, one uppercase letter, and one special character (@#$%^&+=)">
             </div>
             <button type="submit">Register</button>
         </form>

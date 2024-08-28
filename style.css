@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  background: #c9ced3;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Sen, sans-serif;
+  letter-spacing: 2px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: #c9ced3;
 }
 
 .container {
-  height: 630px;
   width: 480px;
+  height: 630px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -27,13 +27,12 @@ body {
 }
 
 /* Form */
-
-form{
+form {
   width: 90%;
 }
 
 .form-group {
-  height:65px;
+  height: 65px;
 }
 
 label {
@@ -50,18 +49,17 @@ input {
   outline: none;
   box-sizing: border-box;
   transition: all 0.3s;
-  font-family: "Inter", sans-serif;
 }
 
-input:valid{
+input:valid {
   border: 1px solid green;
 }
 
-input:invalid{
+input:invalid {
   border: 1px solid red;
 }
 
-button{
+button {
   cursor: pointer;
   color: white;
   background: black;
@@ -69,21 +67,22 @@ button{
   border-radius: 5px;
   height: 50px;
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: Sen, sans-serif;
   font-size: 20px;
+  letter-spacing: 2px;
   margin-top: 5px;
 }
 
-button:hover{
+button:hover {
   filter: brightness(200%);
-  background: rgp(22,22,22);
-} 
+  background: rgb(22, 22, 22);
+}
 
-button:focus{
+button:focus {
   outline: none;
 }
 
-.message-container{
+.message-container {
   border: 1px solid black;
   border-radius: 5px;
   width: 90%;
@@ -92,4 +91,3 @@ button:focus{
   justify-content: center;
   color: black;
 }
-
